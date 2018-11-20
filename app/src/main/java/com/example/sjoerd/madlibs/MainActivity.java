@@ -1,5 +1,6 @@
 package com.example.sjoerd.madlibs;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,16 +18,12 @@ public class MainActivity extends AppCompatActivity {
         playButton.setOnClickListener(new OnPlayButtonClickListener());
     }
 
+    // go to ChooseActivity if playButton is clicked.
     private class OnPlayButtonClickListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            // TODO go to next activity with intent
+            Intent intent = new Intent(MainActivity.this, ChooseActivity.class);
+            startActivity(intent);
         }
-    }
-
-    // starts a MadLib game if the play button is clicked
-    public void playButtonClicked(android.view.View sender) {
-        Button b = (Button) sender;
-        b.setText("Clicked!");
     }
 }
