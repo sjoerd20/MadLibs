@@ -30,22 +30,22 @@ public class ChooseActivity extends AppCompatActivity {
         for (int i = 0; i < storyFiles.length; i++) {
             Button button = findViewById(buttons[i]);
             button.setText(storyNames[i]);
-            button.setOnClickListener(new OnStoryClickListener(buttons[i]));
+            button.setOnClickListener(new OnStoryClickListener());
         }
     }
 
     private class OnStoryClickListener implements View.OnClickListener {
 
-        private int storyId;
-
-        private OnStoryClickListener(int button) {
-            this.storyId = storyFiles[button];
-        }
-
         @Override
         public void onClick(View view) {
 
-
+            int storyId = 0;
+            int buttonId = view.getId();
+            for (int i = 0; i < buttons.length; i++) {
+                if (buttonId == buttons[i]) {
+                    storyId = storyFiles[i];
+                }
+            }
             // construct the selected story
             InputStream inputStream = getResources().openRawResource(storyId);
             Story story = new Story(inputStream);
