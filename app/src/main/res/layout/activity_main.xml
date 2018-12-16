@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Welcome to this game of Mad Libs!" />
+        android:text="Welcome to this game of Mad Libs! On the next screen you can select a story. You will be presented with a few placeholders you'll have to fill in! You'll not be able to see the story beforehand. Be prepared for some very weird stories!" />
 
     <Button
         android:id="@+id/buttonPlay"

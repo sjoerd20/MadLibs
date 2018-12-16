@@ -7,43 +7,8 @@
     android:orientation="vertical"
     tools:context=".StoryActivity">
 
-    <Button
-        android:id="@+id/button0"
+    <ListView
+        android:id="@+id/_storyList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_weight="1"
-        android:text="" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_weight="1"
-        android:text="" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_weight="1"
-        android:text="" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_weight="1"
-        android:text="" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_weight="1"
-        android:text="" />
+        android:layout_height="match_parent" />
 </LinearLayout>
